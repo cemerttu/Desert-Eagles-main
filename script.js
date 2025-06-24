@@ -44,15 +44,33 @@ switch (true) {
       }
 };
 
+// let i = 0;
+
+// while (){
+
+//   statements
+// }
+
+
+const weather = "sunny";
+
+while (weather === "sunny") {
+  console.log("It's a beautiful day!");
+}
+
+let count = 0;
+
+do{
+  console.log("Count is: " + count);
+  count++;
+}while (count < 5);
 
 
 
 
-
-
-document.getElementById("ageForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent form submission
-  const age = parseInt(document.getElementById("age").value);
-  console.log(`Age entered: ${age}`);
-  ticketChecker(age);
-});
+// document.getElementById("ageForm").addEventListener("submit", function (e) {
+//   e.preventDefault(); // Prevent form submission
+//   const age = parseInt(document.getElementById("age").value);
+//   console.log(`Age entered: ${age}`);
+//   ticketChecker(age);
+// });
