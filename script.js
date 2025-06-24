@@ -31,6 +31,8 @@ function ticketChecker(age) {
   }
 };
 
+
+
 document.getElementById("ageForm").addEventListener("submit", function (e) {
   e.preventDefault(); // Prevent form submission
   const age = parseInt(document.getElementById("age").value);
