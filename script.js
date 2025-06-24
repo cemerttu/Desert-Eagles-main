@@ -22,19 +22,26 @@ console.log("Alive");
 function ticketChecker(age) {
   const messageDiv = document.getElementById("message");
 
-  if (age < 18) {
-    messageDiv.textContent = "Enda Uoge ulale. !🐶!";
-  } else if (age < 21) {
-    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 9pm";
-  }else if(age < 25) {
-    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 10";
-  } else if (age < 30) {
-    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 11";
-  }
-
-  else {
-    messageDiv.textContent = "Welcome to the party! 🎉 we know how we do past 9pm ";
-  }
+switch (true) {
+    case age < 13:
+        messageDiv.textContent = "You are a child. Go to your home work.";
+        break;
+    case age >= 13 && age < 18:
+        messageDiv.textContent = "Enda uoge ulale";
+        break;
+    case age >= 18 && age < 21:
+        messageDiv.textContent = "Welcome to the party. but your admission expires at 9 pm";
+        break;
+    case age >= 21 && age < 65:
+        messageDiv.textContent = "Welcome to the party. Enjoy your stay.";
+        break;
+    case age >= 65:
+        messageDiv.textContent = "Welcome to the party. You get a free drink  + plus a cup of tea.";
+        break;
+    default:
+        messageDiv.textContent = "Invalid age entered. Please enter a valid age.";
+        break;
+      }
 };
 
 
