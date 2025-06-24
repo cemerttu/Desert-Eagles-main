@@ -26,7 +26,13 @@ function ticketChecker(age) {
     messageDiv.textContent = "Enda Uoge ulale. !🐶!";
   } else if (age < 21) {
     messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 9pm";
-  } else {
+  }else if(age < 25) {
+    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 10;
+  } else if (age < 30) {
+    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 11;
+  }
+
+  else {
     messageDiv.textContent = "Welcome to the party! 🎉 we know how we do past 9pm ";
   }
 };
