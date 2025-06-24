@@ -27,9 +27,9 @@ function ticketChecker(age) {
   } else if (age < 21) {
     messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 9pm";
   }else if(age < 25) {
-    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 10;
+    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 10";
   } else if (age < 30) {
-    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 11;
+    messageDiv.textContent = "Welcome to the party! 🎉 but leave @ 11";
   }
 
   else {
