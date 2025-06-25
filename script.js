@@ -65,6 +65,12 @@ do{
   count++;
 }while (count < 5);
 
+for(initalization; condition; update) {
+  body
+}
+for(let i = 0; i < 5; i++) {
+  console.log("Iteration number: " + i);
+}
 
 
 
