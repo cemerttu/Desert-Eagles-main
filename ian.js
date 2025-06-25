@@ -32,3 +32,8 @@ const color = {
 for(const property in color){
     console.log(color[property]);
 }
+
+
+
+
+
